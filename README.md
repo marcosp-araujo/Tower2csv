@@ -13,3 +13,5 @@ https://talltowers.bsc.es/access-the-data
 The data is organized as follows:
 
 ![image](https://github.com/marcosp-araujo/Tower2csv/assets/88653954/88a28998-6584-4e66-a616-556e6b23a530)
+
+This readme will be finished soon...
