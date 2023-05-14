@@ -8,7 +8,6 @@ This code converts netcdf files from the Tall Tower database into csv files
 The data was provided by the Barcelona Super Computer Tall Tower Database:
 https://talltowers.bsc.es/access-the-data.
 
-Data from The OWEZ meteorological data is used as example.
 
 THIS SCRIPT REQUIRES THE xarray LIBRARY. SEE INSTALLATION INSTRUCTIONS BELOW:
 https://docs.xarray.dev/en/stable/getting-started-guide/installing.html#installation-instructions
