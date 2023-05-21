@@ -25,6 +25,9 @@ If we open, for instance, the humidity-sensor folder "huragl21S1", we will see t
 
 ![image](https://github.com/marcosp-araujo/Tower2csv/assets/88653954/0b73c460-3fb6-4c61-aa5f-addd5ffee83e)
 
-The Tower2csv scans all these files, from all subfolders, and joins them into a single .csv file:
+The Tower2csv scans all these files, from all subfolders, and joins them into a single .csv file as follows:
+
+![image](https://github.com/marcosp-araujo/Tower2csv/assets/88653954/d76d4104-0f8c-4d14-b386-5ad691a2bef6)
+
 
 
