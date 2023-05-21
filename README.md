@@ -16,4 +16,9 @@ The data are in folder called '10minutely':
 
 ![image](https://github.com/marcosp-araujo/Tower2csv/assets/88653954/88a28998-6584-4e66-a616-556e6b23a530)
 
-This readme will be finished soon...
+Inside the "10minutely" folder, the data are organized in different folders named according to the sensor type:
+![image](https://github.com/marcosp-araujo/Tower2csv/assets/88653954/3a697716-fc1e-439c-a5c3-2f0074f3b43d)
+
+If we open, for instance, the humidity sensor 'huragl21S1', we will that there is one netcdf file for each month:
+![image](https://github.com/marcosp-araujo/Tower2csv/assets/88653954/0b73c460-3fb6-4c61-aa5f-addd5ffee83e)
+
