@@ -1,8 +1,11 @@
 The "Tower2csv.py" class scans netcdf files from a Tall-Tower database and joins all them into a single .csv file. An example of how to use it is given at the "main.py" file.
 
 Towards this end, the Tower2csv only requires three STRING inputs: 
+
 1 - netcdf_dir = Directory of netcdf files 
+
 2 - year = Year of data to be joined and converted 
+
 3 - save_dir = Directory to save the .csv file.
 
 OUTPUT EXAMPLE
