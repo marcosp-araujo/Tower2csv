@@ -1,4 +1,5 @@
 # Main code example of how to call the Tower2csv
+# version 1.0
 
 import os
 from Tower2csv import Tower2csv
