@@ -77,10 +77,10 @@ class Tower2csv:
 ###############################################################################
 ## This method saves the dataframe in .csv format
     def save_csv(self):
-        cvs_file_dir = self.save_dir  + self.year + ".csv"
+        cvs_file_dir = self.save_dir  + "/" + self.year + ".csv"
         print('Saving .csv file:',cvs_file_dir,'\n PLEASE WAIT.')
        #Saving dataframe in csv
-        self.df_year.to_csv(cvs_file_dir ,sep = ';', decimal = ',') 
+        self.df_year.to_csv(cvs_file_dir, sep = ',', decimal = '.') 
         print('The .csv file has been saved.')  
         
 ###############################################################################
