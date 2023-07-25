@@ -15,7 +15,7 @@ https://docs.xarray.dev/en/stable/getting-started-guide/installing.html#installa
 """
 
 import os
-import xarray as xr #library to read netcdf files
+import xarray as xr # library to read netcdf files
 import pandas as pd
 import numpy as np
 
@@ -23,36 +23,37 @@ import numpy as np
 
 class Tower2csv:
     def __init__(self,netcdf_dir,year,save_dir):
-        self.netcdf_dir = netcdf_dir #Directory of netcdf files
-        self.year = year #Year of data to be joined and converted
+        self.netcdf_dir = netcdf_dir # Directory of netcdf files
+        self.year = str(year) # Year of data to be joined and converted
         self.save_dir = save_dir # Directory to save the .csv
-        self.find_nc()  #find, read and convert netcdf files
-        self.save_csv() #save data in .csv
+        self.find_nc()  # find, read and convert netcdf files
+        self.save_csv() # save data in .csv
         
 ###############################################################################
 ## This method scans the netcdf files and calls the converter method
-## It joins all data from a given year in one single dataframe
+## It joins all data from a given year into a one single dataframe
     def find_nc(self):
-        files_dir = list() #Full directories of the netcdf files
-        files_names = list() #To receive the only files names
-        sensors_names = list() #Names of the sensors
+        files_dir = list() # Full directories of the netcdf files
+        files_names = list() # To receive only files names
+        sensors_names = list() # Names of the sensors
         df_concat = pd.DataFrame()
         df_year = pd.DataFrame()
         for sensor_dir in os.listdir(self.netcdf_dir):
             print('Reading', sensor_dir,'files')
-            current_dir = (os.path.join(self.netcdf_dir, sensor_dir)) #current directory
+          # Current directory
+            current_dir = (os.path.join(self.netcdf_dir, sensor_dir))
             for current_file in os.listdir(current_dir):
                 if current_file.find(self.year) >= 0:
                     files_dir.append(os.path.join(current_dir, current_file))
                     files_names.append(current_file)
                     sensors_names.append(current_file.split('_')[0]) 
                   #print(files_dir[-1])
-                  #Calling coverted method
+                  # Calling coverted method
                     df = self.nc2df(files_dir[-1])
                     df_concat = pd.concat([df_concat,df])
             df_year = pd.concat([df_year,df_concat],axis = 1)
-            df_concat = pd.DataFrame()
-            
+            df_concat = pd.DataFrame()     
+             
         self.sensors_names = np.unique(sensors_names)     
         self.files_dir = files_dir
         self.files_names = files_names           
@@ -67,10 +68,13 @@ class Tower2csv:
        #Dropping "latitude", "longitude" and "height" indexes
         df = df.droplevel(['latitude','longitude','height']) 
         sensor = df.columns[0]; #It is the main quality-assured column 
-       #Keep only the quality-assured main current_sensor 
-       #(the others are 'quality_flag' or 'raw_data')
+      # Omiting the milisecond information
+        df.index = df.index.round("S")
+      # Keep only the quality-assured main current_sensor 
+      # (the others are 'quality_flag' or 'raw_data')
         df = df[[sensor]]
-       #Asignin NaN to values equals to -99999
+        df.columns
+      # Asignin NaN to values equals to -99999
         df[sensor] [( df[sensor] < -9999)] = np.nan
         return df
     
@@ -79,7 +83,7 @@ class Tower2csv:
     def save_csv(self):
         cvs_file_dir = self.save_dir  + "/" + self.year + ".csv"
         print('Saving .csv file:',cvs_file_dir,'\n PLEASE WAIT.')
-       #Saving dataframe in csv
+      # Saving dataframe in csv
         self.df_year.to_csv(cvs_file_dir, sep = ',', decimal = '.') 
         print('The .csv file has been saved.')  
         
