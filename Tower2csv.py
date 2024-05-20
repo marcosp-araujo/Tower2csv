@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Created on Thu Apr  6 06:55:16 2023
 
@@ -19,22 +18,23 @@ import xarray as xr # library to read netcdf files
 import pandas as pd
 import numpy as np
 
-#%% ###########################################################################
+#%% ################################################################################
 
 class Tower2csv:
     def __init__(self,netcdf_dir,year,save_dir):
+        ''' Constructor '''
         self.netcdf_dir = netcdf_dir # Directory of netcdf files
-        self.year = str(year) # Year of data to be joined and converted
-        self.save_dir = save_dir # Directory to save the .csv
-        self.find_nc()  # find, read and convert netcdf files
-        self.save_csv() # save data in .csv
+        self.year = str(year)        # Year of data to be joined and converted
+        self.save_dir = save_dir     # Directory to save the .csv
+        self.find_nc()               # find, read and convert netcdf files
+        self.save_csv()              # save data in .csv
         
-###############################################################################
-## This method scans the netcdf files and calls the converter method
-## It joins all data from a given year into a one single dataframe
-    def find_nc(self):
-        files_dir = list() # Full directories of the netcdf files
-        files_names = list() # To receive only files names
+    def find_nc(self): ############################################################
+        '''This method scans the netcdf files and calls the converter method
+           It joins all data from a given year into a one single dataframe
+        '''
+        files_dir = list()     # Full directories of the netcdf files
+        files_names = list()   # To receive only files names
         sensors_names = list() # Names of the sensors
         df_concat = pd.DataFrame()
         df_year = pd.DataFrame()
@@ -60,9 +60,9 @@ class Tower2csv:
         self.df_year = df_year
         self.df_concat = df_concat
         
-###############################################################################  
-## This method reads and converts netcdf into dataframe       
-    def nc2df(self,file):
+    def nc2df(self,file): ######################################################
+        ''' This method reads and converts netcdf into dataframe  
+        '''
         nc = xr.open_dataset(file) #Reading the netcdf file
         df = nc.to_dataframe()     #Converting netcdf into dataframe
        #Dropping "latitude", "longitude" and "height" indexes
@@ -78,9 +78,8 @@ class Tower2csv:
         df[sensor] [( df[sensor] < -9999)] = np.nan
         return df
     
-###############################################################################
-## This method saves the dataframe in .csv format
-    def save_csv(self):
+    def save_csv(self): ########################################################
+        ''' This method saves the dataframe in .csv format '''
         cvs_file_dir = self.save_dir  + "/" + self.year + ".csv"
         print('Saving .csv file:',cvs_file_dir,'\n PLEASE WAIT.')
       # Saving dataframe in csv
