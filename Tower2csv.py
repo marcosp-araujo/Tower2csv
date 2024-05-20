@@ -26,17 +26,17 @@ import numpy as np
 class Tower2csv:
     def __init__(self,netcdf_dir,year,save_dir):
         ''' Constructor '''
-        self.netcdf_dir = netcdf_dir # Directory of netcdf files
+        self.netcdf_dir = netcdf_dir # Directory of netCDF files
         self.year = str(year)        # Year of data to be joined and converted
         self.save_dir = save_dir     # Directory to save the .csv
-        self.find_nc()               # find, read and convert netcdf files
+        self.find_nc()               # find, read and convert netCDF files
         self.save_csv()              # save data in .csv
         
     def find_nc(self): ############################################################
-        '''This method scans the netcdf files and calls the converter method
+        '''This method scans the netCDF files and calls the converter method
            It joins all data from a given year into a one single dataframe
         '''
-        files_dir = list()     # Full directories of the netcdf files
+        files_dir = list()     # Full directories of the netCDF files
         files_names = list()   # To receive only files names
         sensors_names = list() # Names of the sensors
         df_concat = pd.DataFrame()
@@ -71,7 +71,7 @@ class Tower2csv:
        #Dropping "latitude", "longitude" and "height" indexes
         df = df.droplevel(['latitude','longitude','height']) 
         sensor = df.columns[0]; #It is the main quality-assured column 
-      # Omiting the milisecond information
+      # Rounding the milisecond
         df.index = df.index.round("S")
       # Keep only the quality-assured main current_sensor 
       # (the others are 'quality_flag' or 'raw_data')
