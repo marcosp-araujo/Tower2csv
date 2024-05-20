@@ -5,8 +5,8 @@ import os
 from Tower2csv import Tower2csv
 
 cwd = os.getcwd()
-netcdf_dir = cwd + '/owez/10minutely/' # directory of the netcdf files
-year = 2009   # year to be converted
+netcdf_dir = './owez/10minutely/' # directory of the netcdf files
+year = 2009     # year to be converted
 save_dir = cwd  # directory to save the .csv files
 
 T = Tower2csv(netcdf_dir,year,save_dir)

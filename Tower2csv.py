@@ -1,6 +1,4 @@
 """
-Created on Thu Apr  6 06:55:16 2023
-
 @author: Marcos P. Araujo da Silva
 
 This code converts netcdf files from the Tall Tower database into csv files
@@ -8,8 +6,13 @@ The data was provided by the Barcelona Super Computer Tall Tower Database:
 https://talltowers.bsc.es/access-the-data.
 
 
-THIS SCRIPT REQUIRES THE xarray LIBRARY. SEE INSTALLATION INSTRUCTIONS BELOW:
-https://docs.xarray.dev/en/stable/getting-started-guide/installing.html#installation-instructions
+Required libraries:
+xarray, netCDF4, pandas and numpy:
+
+pip install xarray[all]
+pip install netCDF4
+pip install pandas
+pip install numpy
 
 """
 
