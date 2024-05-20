@@ -1,6 +1,6 @@
 INTRODUCTION
 
-  The "Tower2csv.py" class scans netcdf files from a Tall-Tower database and joins all netCDF files from a given year into a single .csv file. An example of how to use it is provided in the "main.py" file.
+  The "Tower2csv.py" class scans netCDF files from a Tall Tower database and joins all them into a single .CSV file. A "how to" example is provided in the "main.py" file.
 
 INPUTS
 
@@ -8,17 +8,15 @@ The Tower2csv requires three inputs:
 
 1 - netcdf_dir = Directory of netcdf files (string).
 
-2 - year = Year of data to be joined and converted (number).
+2 - save_dir = Directory to save the .csv (string).
 
-3 - save_dir = Directory to save the .csv file (string).
+3 - save_file = Name of the .csv file to be saved (string).
 
 DATA EXAMPLE
 
-  Data from the OWEZ offshore meteorological tower are used exemplify the Tower2csv applicability. You can find some OWEZ-database example files in the "owez" folder within this repository. The whole OWEZ database can be downloaded in the following link: 
+  Data from the OWEZ offshore meteorological tower are used exemplify the Tower2csv applicability. You can find data from other sites in the following link: 
 
   https://talltowers.bsc.es/access-the-data
-  
-  To download the data, search for "Egmond aan zee" in the field "Tower name". Then, click at the station in the map, and after that, click in "Access to data: b2share". Then, you will download the "owez.zip" file.
 
 NETCDF DATA STRUCTURE
 
