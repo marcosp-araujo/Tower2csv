@@ -12,3 +12,5 @@ save_dir = "./"                   # directory to save the .csv file
 save_file_name = "owez"           # year to be converted
 
 T = Tower2csv(netcdf_dir, save_dir, save_file_name)
+
+# %%
