@@ -1,6 +1,6 @@
 INTRODUCTION
 
-  The "Tower2csv.py" class scans netCDF files from a Tall Tower database and joins all them into a single .CSV file. A "how to" example is provided in the "main.py" file.
+  The "Tower2csv.py" class scans netCDF files from a Tall Tower database and joins all of them into a single .CSV file. A "how to" example is provided in the "main.py" file.
 
 INPUTS
 
@@ -20,7 +20,7 @@ DATA EXAMPLE
 
 netCDF DATABASE STRUCTURE
 
-  Now, let's continue by understanding the dataset structure using the data example which is uploaded here. When opening the "owez" folder, there is subfolder called "10minutely":
+  Now, let's continue by understanding the dataset structure using the data example which is uploaded here. When opening the "owez" folder, there is a subfolder called "10minutely":
 
 ![image](https://github.com/marcosp-araujo/Tower2csv/assets/88653954/4fe8815a-d4da-4547-8387-3805ad0c786d)
 
