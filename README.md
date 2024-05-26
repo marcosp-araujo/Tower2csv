@@ -6,11 +6,11 @@ INPUTS
 
 The Tower2csv requires three inputs: 
 
-1 - netCDF_dir = Directory of netCDF files (string).
+1 - netcdf_dir = Directory of the netCDF files (string).
 
-2 - save_dir = Directory to save the .csv (string).
+2 - save_dir = Directory to save the .CSV (string).
 
-3 - save_file = Name of the .csv file to be saved (string).
+3 - save_file = Name of the .CSV file to be saved (string).
 
 DATA EXAMPLE
 
@@ -28,13 +28,13 @@ The data are organized in different subfolders inside "10minutely", which are na
 
 ![image](https://github.com/marcosp-araujo/Tower2csv/assets/88653954/e25850a6-332e-4c84-a627-f4d1f5c6b835)
 
-If we open, for instance, the humidity-sensor folder "huragl116S1", we will see one netCDF file for each month:
+For instance, in the humidity-sensor folder "huragl116S1", you will see that there is one netCDF file for each month:
 
 ![image](https://github.com/marcosp-araujo/Tower2csv/assets/88653954/c2a5965f-2921-4de4-9e07-e15bb0f09d9a)
 
 OUTPUT EXAMPLE
 
-When running the "Tower2csv.py" via the "main.py", the first scans all files of a given year, from all subfolders, and joins the data into a single .csv file. Data from each sensor are separately stored in different comma-separated columns as follows:
+When running the "Tower2csv.py" via "main.py", all netCDF files from all subfolders are joined, and then, saved into a single .CSV file. Data from each sensor are stored in different comma-separated columns as follows:
 
 ![image](https://github.com/marcosp-araujo/Tower2csv/assets/88653954/39919ba6-3f11-41de-932d-713e3aa5dded)
 

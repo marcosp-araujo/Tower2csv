@@ -1,5 +1,7 @@
 '''
 Main script example on how to use the Tower2csv.py
+
+https://github.com/marcosp-araujo/Tower2csv/
 '''
 
 #%% 
