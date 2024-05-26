@@ -6,7 +6,7 @@ INPUTS
 
 The Tower2csv requires three inputs: 
 
-1 - netcdf_dir = Directory of netcdf files (string).
+1 - netCDF_dir = Directory of netCDF files (string).
 
 2 - save_dir = Directory to save the .csv (string).
 
@@ -14,11 +14,11 @@ The Tower2csv requires three inputs:
 
 DATA EXAMPLE
 
-  Data from the OWEZ offshore meteorological tower are used exemplify the Tower2csv applicability. You can find data from other sites in the following link: 
+  Data from the OWEZ offshore meteorological tower are used to exemplify the Tower2csv applicability. You can find data from other sites at the following link: 
 
   https://talltowers.bsc.es/access-the-data
 
-NETCDF DATA STRUCTURE
+netCDF DATABASE STRUCTURE
 
   Now, let's continue by understanding the dataset structure using the data example which is uploaded here. When opening the "owez" folder, there is subfolder called "10minutely":
 
@@ -28,7 +28,7 @@ The data are organized in different subfolders inside "10minutely", which are na
 
 ![image](https://github.com/marcosp-araujo/Tower2csv/assets/88653954/e25850a6-332e-4c84-a627-f4d1f5c6b835)
 
-If we open, for instance, the humidity-sensor folder "huragl116S1", we will see one netcdf file for each month:
+If we open, for instance, the humidity-sensor folder "huragl116S1", we will see one netCDF file for each month:
 
 ![image](https://github.com/marcosp-araujo/Tower2csv/assets/88653954/c2a5965f-2921-4de4-9e07-e15bb0f09d9a)
 
