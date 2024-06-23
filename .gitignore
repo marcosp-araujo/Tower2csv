@@ -1,3 +1,5 @@
 __pycache__/
+__queuestorage__/
+__azurite_db_queue_extent__.json
+__azurite_db_queue__.json
 Tower2csv_2.py
-.gitattributes

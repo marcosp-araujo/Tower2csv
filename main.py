@@ -14,5 +14,3 @@ if __name__ == "__main__":
     save_file_name = "owez"           # Save file name
 
     T = Tower2csv(netcdf_dir, save_dir, save_file_name)
-
-# %%
