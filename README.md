@@ -1,13 +1,17 @@
-### INTRODUCTION
+### Introduction
 
   The Tall Tower is an open database aimed at boosting the use of hub-height wind observations from meteorological towers.
   The [Tower2csv.py](/modules/Tower2csv.py) class scans netCDF files from a Tall Tower database and joins all of them into a single .CSV file. 
 
-### HOW TO USE
+### How to use
 
-A "how to" example is provided in the [main.py](/main) file.
+A "how to" example is provided in the [main.py](/main.py) file.
 
-### INPUT PARAMETERS
+### Requirements
+
+See [requirements.txt](requirements.txt).
+
+### Input parameters
 
 The Tower2csv requires three inputs: 
 
@@ -17,11 +21,11 @@ The Tower2csv requires three inputs:
 
 3 - save_file = Name of the .CSV file to be saved (string).
 
-### INPUT DATA EXAMPLE
+### Input data example
 
   Data from the OWEZ offshore meteorological tower are used to exemplify the Tower2csv applicability. The example data are in the [owez](/owez) folder. You can find data from other sites at the following link: https://talltowers.bsc.es/access-the-data
 
-#### netCDF DATABASE STRUCTURE
+#### Input database structure
 
   Now, let's continue by understanding the dataset structure using the data example which is uploaded here. When opening the [owez](/owez) folder, there is a subfolder called [10minutely](/owez/10minutely):
 
@@ -35,9 +39,9 @@ For instance, in the humidity-sensor folder "huragl116S1", you will see that the
 
 ![image](https://github.com/marcosp-araujo/Tower2csv/assets/88653954/c2a5965f-2921-4de4-9e07-e15bb0f09d9a)
 
-### OUTPUT EXAMPLE
+### Output example
 
-When running the "Tower2csv.py" via "main.py", all netCDF files from all subfolders are joined, and then, saved into a single .CSV file. Data from each sensor are stored in different comma-separated columns as follows:
+One output example is in [owez.csv](owez.csv). When running the [Tower2csv.py](/modules/Tower2csv.py) via [main.py](/main.py), all netCDF files from all subfolders are joined, and then, saved into a single .CSV file. Data from each sensor are stored in different comma-separated columns as follows:
 
 ![image](https://github.com/marcosp-araujo/Tower2csv/assets/88653954/39919ba6-3f11-41de-932d-713e3aa5dded)
 
