@@ -9,7 +9,9 @@ A "how to" example is provided in the [main.py](/main.py) file.
 
 ### Requirements
 
-See [requirements.txt](requirements.txt).
+See [requirements.txt](requirements.txt). You can install than using the following command in your terminal:
+
+pip install -r requirements.txt
 
 ### Input parameters
 
