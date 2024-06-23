@@ -33,47 +33,47 @@ class Tower2csv:
         self.find_nc()               # find, read and convert netCDF files
         self.save_csv()              # save data in .csv
         
-    def find_nc(self): ############################################################
+    def find_nc(self): ############################################
         '''This method scans the netCDF files in each sensor folder and join them
            into a single dataframe that is saved in CSV format.
         '''
-        df_concat = pd.DataFrame()
-        df_year = pd.DataFrame()
+        
       # Loop over sensors' folders
-        sensors_folders = os.listdir(self.netcdf_dir) # Names of the sensors
-        for sensor_dir in sensors_folders:
-            print('Reading', sensor_dir, 'files')
-            files_names = glob.glob(f"{self.netcdf_dir}/{sensor_dir}/*.nc")
+        df_all_files = pd.DataFrame() # To store all files
+        folder_names = os.listdir(self.netcdf_dir) # Names of the sensors
+        for current_folder in folder_names:
+            print('Reading', current_folder, 'files')
+            files_names = glob.glob(f"{self.netcdf_dir}/{current_folder}/*.nc")
           # Loop over netCDF files in the current sensor folder 
+            df_concat_folder = pd.DataFrame()
             for current_file in files_names:
                 df = self.nc2df(current_file)  # Converts netCDF into pandas dataframe
-                df_concat = pd.concat([df_concat, df])
-            df_year = pd.concat([df_year, df_concat], axis = 1)
-            df_concat = pd.DataFrame()     
+                df_concat_folder = pd.concat([df_concat_folder, df], axis = 0)
+            df_all_files = pd.concat([df_all_files, df_concat_folder], axis = 1)   
              
-        self.sensors_folders = sensors_folders     
+        self.folder_names = folder_names     
         self.files_names = files_names           
-        self.df_year = df_year
-        self.df_concat = df_concat
+        self.df_all_files = df_all_files
+        self.df_concat_folder = df_concat_folder
         
-    def nc2df(self,file): ######################################################
-        ''' This method reads and converts netcdf into a pandas dataframe '''
+    def nc2df(self, file:str): ##################################
+        ''' This method reads and converts netCDF into a pandas dataframe '''
         nc = xr.open_dataset(file) # Reading the netcdf file
         df = nc.to_dataframe()     # Converting netcdf into dataframe
         df = df.droplevel(['latitude','longitude','height']) 
         # Keeps only the quality-assured data
-        sensor = df.columns[0]; # Column of the quality-assured data
-        df = df[[sensor]]       # (the other columns are 'quality_flag' or 'raw_data')
-        df[( df <= -99999)] = np.nan # NaN to values equals to -99999
-        df.index = df.index.round("S") # Rounding the milisecond
+        sensor = df.columns[0]; # Column of the quality-assured data (the other
+        df = df[[sensor]]       # columns are 'quality_flag' or 'raw_data')
+        df[( df <= -99999)] = np.nan   # NaN to values equals to -99999
+        df.index = df.index.round("S") # Rounding milisecond to second
         return df
     
-    def save_csv(self): ########################################################
+    def save_csv(self): ###########################################
         ''' This method saves the dataframe in .CSV format '''
         cvs_file_name = f"{self.save_dir}/{self.save_file}.csv"
-        print('Saving the ', cvs_file_name,' file \n PLEASE WAIT.')
+        print(f'Saving data at: {cvs_file_name} \nPLEASE WAIT.')
       # Saving dataframe in CSV
-        self.df_year.to_csv(cvs_file_name, sep = ',', decimal = '.') 
+        self.df_all_files.to_csv(cvs_file_name, sep = ',', decimal = '.') 
         print('The .CSV file has been saved.')  
         
 ###############################################################################

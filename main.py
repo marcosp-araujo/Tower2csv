@@ -5,12 +5,14 @@ https://github.com/marcosp-araujo/Tower2csv/
 '''
 
 #%% 
-from Tower2csv import Tower2csv
 
-netcdf_dir = "./owez/10minutely/" # directory of the netCDF files
-save_dir = "./"                   # directory to save the .csv file
-save_file_name = "owez"           # year to be converted
+from modules.Tower2csv import Tower2csv
 
-T = Tower2csv(netcdf_dir, save_dir, save_file_name)
+if __name__ == "__main__":
+    netcdf_dir = r".\owez\10minutely" # directory of the netCDF files
+    save_dir = "."                    # directory to save the .csv file
+    save_file_name = "owez"           # Save file name
+
+    T = Tower2csv(netcdf_dir, save_dir, save_file_name)
 
 # %%
