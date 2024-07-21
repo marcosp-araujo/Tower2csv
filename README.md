@@ -5,22 +5,22 @@
 
 ### Requirements and virtual environment
 
-Creating a virtual environment is strongly advisable to avoid errors when running the Tower2csv. It can be done using the "virtualenv" library. Use the following command lines in your terminal:
+Creating a virtual environment is strongly advisable to avoid errors when running the Tower2csv. It can be done using the "virtualenv" library. Use the following command lines in your terminal to install "virtualenv" and configurate a new virtual environment:
 
 ```
 pip install virtualenv
 ```
-To create a new virtual environment called "venv":
+For creating a new virtual environment called "venv":
 ```
 python -m venv venv
 ```
 
-Now, activate the new virtual environment:
+Now, for activating the new virtual environment:
 ```
 .\venv\Scripts\activate
 ```
 
-Then, install the [requirements.txt](requirements.txt):
+Then, for installing the [requirements.txt](requirements.txt):
 
 ```
 pip install -r requirements.txt
