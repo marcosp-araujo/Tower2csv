@@ -4,7 +4,7 @@ The Tall Tower is an open database aimed at boosting the use of hub-height wind 
 
 ### Requirements and virtual environment
 
-Creating a virtual environment is strongly advisable to avoid errors when running the Tower2csv. It can be done using the "virtualenv" library. Use the following command lines in your terminal to install "virtualenv" and configurate a new virtual environment:
+Creating a virtual environment is strongly advisable to avoid errors when running the Tower2csv. It can be done using the "virtualenv" library. Use the following command lines in your terminal to install "virtualenv" and setup a new virtual environment:
 
 ```
 pip install virtualenv
@@ -42,5 +42,4 @@ If running the Tower2csv in your IDE you have to set this input parameters in th
 - tower_name = Tower name
 - unzip_dir = Directory to extract the netCDF files
 - save_file_path = Path to save the .csv file
-  
   
