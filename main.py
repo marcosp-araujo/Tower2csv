@@ -10,7 +10,7 @@ from tower2csv.Tower2csv import Tower2csv
 
 if __name__ == "__main__":
 
-    site = '42361' # Tower name
+    tower_name = '42361' # Tower name
     unzip_dir = r".\\Data_tmp" # Directory to extract the netCDF files
-    save_file_path = f".\\Data\\{site}" # Path to save the .csv file
-    T = Tower2csv(site, unzip_dir, save_file_path)
+    save_file_path = f".\\Data\\{tower_name}" # Path to save the .csv file
+    T = Tower2csv(tower_name, unzip_dir, save_file_path)
