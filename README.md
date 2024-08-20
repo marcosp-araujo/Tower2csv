@@ -1,10 +1,10 @@
 ### Introduction
 
-The Tall Tower is an open database aimed at boosting the use of hub-height wind observations from meteorological towers. The [Tower2csv](/modules/Tower2csv) API automatically requests data to Tall Tower for a given input tower name, and then it reads all netCDF files and joins all of them into a single .CSV file, that can be downloaded.
+The Tall Tower Dataset is an open database aimed at boosting the use of hub-height wind observations from meteorological towers. The [Tower2csv](/modules/Tower2csv) API automatically requests data to Tall Tower for a given input tower name, and then it reads and joins all netCDF into a single .CSV file, that can be downloaded.
 
 ### Requirements and virtual environment
 
-Creating a virtual environment is strongly advisable to avoid errors when running the Tower2csv. It can be done using the "virtualenv" library. Use the following command lines in your terminal to install "virtualenv" and setup a new virtual environment:
+Creating a virtual environment is strongly advisable to avoid errors when running the Tower2csv in your local machine. It can be done using the "virtualenv" library. You may use the following command lines in your terminal to install "virtualenv" and set up a new virtual environment:
 
 ```
 pip install virtualenv
