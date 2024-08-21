@@ -18,7 +18,7 @@ if __name__ == '__main__':
         st.write('A download button will show up once the process is finished')
         with st.empty():
             T = Tower2csv(tower_name = tower_name, 
-                          unzip_dir = r'.\\Data_tmp',
+                          unzip_dir = r'.//Data_tmp',
                           remove_unzip_files = True)
         download(T)
  
