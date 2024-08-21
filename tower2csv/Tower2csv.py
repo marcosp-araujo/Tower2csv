@@ -62,8 +62,8 @@ class Tower2csv:
         zip_file.extractall(f"{self.unzip_dir}")
 # ----------------------------------------------------------------------- #
     def find_paths(self):
-      self.folder_names = glob.glob(f"{self.unzip_dir}//*//*//*//")
-      self.tower_name = glob.glob(f"{self.unzip_dir}//*")[0].split("//")[-1]
+      self.folder_names = glob.glob(f"{self.unzip_dir}\\*\\*\\*\\")
+      self.tower_name = glob.glob(f"{self.unzip_dir}\\*")[0].split("\\")[-1]
 # ----------------------------------------------------------------------- #
     def read_nc(self): 
       '''This method scans the netCDF files in each sensor folder and join them
@@ -73,9 +73,9 @@ class Tower2csv:
       df_all_files = pd.DataFrame() # To store all files
       N_folders = len(self.folder_names)
       for count, current_folder in enumerate(self.folder_names):
-        sensor_name = current_folder.split("//")[-2]
+        sensor_name = current_folder.split("\\")[-2]
         count += 1
-        message = f'Processing {sensor_name} (folder {count}/{N_folders})'
+        message = f'Processing {sensor_name} (folder {count}//{N_folders})'
         st.write(message)
         print(message)
         files_list = glob.glob(f"{current_folder}//*.nc")
