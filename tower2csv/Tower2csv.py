@@ -63,7 +63,7 @@ class Tower2csv:
 # ----------------------------------------------------------------------- #
     def find_paths(self):
       self.folder_names = glob.glob(f"{self.unzip_dir}\\*\\*\\*\\")
-      self.tower_name = glob.glob(f"{self.unzip_dir}\\*")[0].split("\\")[-1]
+      self.tower_name = glob.glob(f"{self.unzip_dir}/*")[0].split("/")[-1]
 # ----------------------------------------------------------------------- #
     def read_nc(self): 
       '''This method scans the netCDF files in each sensor folder and join them
