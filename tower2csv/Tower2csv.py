@@ -75,7 +75,7 @@ class Tower2csv:
       for count, current_folder in enumerate(self.folder_names):
         sensor_name = current_folder.split("/")[-2]
         count += 1
-        message = f'Processing {sensor_name} (folder {count}//{N_folders})'
+        message = f'Processing {sensor_name} (folder {count}/{N_folders})'
         st.write(message)
         print(message)
         files_list = glob.glob(f"{current_folder}//*.nc")
