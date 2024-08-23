@@ -3,6 +3,7 @@ __queuestorage__/
 venv/
 auxiliar/
 Data_tmp/
+Data/*/
 
 *.ipynb
 Dockerfile
