@@ -18,7 +18,10 @@ if __name__ == '__main__':
         st.write('A download button will show up once the process is finished')
         with st.empty():
             T = Tower2csv(tower_name = tower_name, 
-                          unzip_dir = './/Data',
+                          unzip_dir = './Data',
                           remove_unzip_files = True)
-        download(T)
+        if all(T.df_all_files.isna()):
+            st.write('All data found are NaN. Please, try another tower')
+        else:
+            download(T)
  

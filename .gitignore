@@ -4,6 +4,7 @@ venv/
 auxiliar/
 Data_tmp/
 Data/*/
+__blobstorage__
 
 *.ipynb
 Dockerfile

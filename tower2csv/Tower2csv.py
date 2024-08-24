@@ -73,16 +73,21 @@ class Tower2csv:
       df_all_files = pd.DataFrame() # To store all files
       N_folders = len(self.folder_names)
       for count, current_folder in enumerate(self.folder_names):
+        current_folder = current_folder.replace('\\','/').replace('//','/')
         sensor_name = current_folder.split("/")[-2]
         count += 1
         message = f'Processing {sensor_name} (folder {count}/{N_folders})'
         st.write(message)
         print(message)
-        files_list = glob.glob(f"{current_folder}//*.nc")
+        files_list = glob.glob(f"{current_folder}/*.nc")
         nc = xr.concat([xr.open_dataset(i) 
                         for i in files_list], dim = "time")
         df_folder = self.nc2df(sensor_name, nc)
-        df_all_files = pd.concat([df_folder, df_all_files], axis = 1)
+        if all(df_folder.isna()):
+          print('All data in this folder are NaN')  
+          continue
+        else:
+          df_all_files = pd.concat([df_folder, df_all_files], axis = 1)
 
       # Storing results in  the object  
       self.df_all_files = df_all_files   
