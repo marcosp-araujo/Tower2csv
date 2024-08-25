@@ -84,7 +84,7 @@ class Tower2csv:
                         for i in files_list], dim = "time")
         df_folder = self.nc2df(sensor_name, nc)
         if df_folder.isna().all() is True:
-          print('All data in this folder are NaN')  
+          print('All data in this folder are NaN') 
           continue
         else:
           df_folder = df_folder.reset_index()
