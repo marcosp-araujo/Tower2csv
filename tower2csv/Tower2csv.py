@@ -79,7 +79,7 @@ class Tower2csv:
         message = f'Processing {sensor_name} (folder {count}/{N_folders})'
         st.write(message)
         print(message)
-        files_list = glob.glob(f"{current_folder}/*.nc")
+        files_list = glob.glob(f"{current_folder}//*.nc")
         nc = xr.concat([xr.open_dataset(i) 
                         for i in files_list], dim = "time")
         df_folder = self.nc2df(sensor_name, nc)
