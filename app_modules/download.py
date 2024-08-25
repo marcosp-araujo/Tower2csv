@@ -12,7 +12,7 @@ def download(T:Tower2csv):
     csv = convert_df(T.df_all_files)
 
     st.download_button(
-        label="Download data as a .CSV",
+        label="Download",
         data=csv,
         file_name=f"{T.tower_name}.csv",
         mime="text/csv",

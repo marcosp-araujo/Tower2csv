@@ -9,7 +9,7 @@ def description():
 
     st.write('By Marcos da Silva [(Linkedin)](%s)' %'https://www.linkedin.com/in/marcosp-araujo/')
 
-    st.write('The Tower2csv is a Python-based API aimed at accessing global wind energy measurement data with ease. Its user-friendly interface (built with Streamlit) provides the downloading of data from the [Tall Tower Dataset](%s) in CSV format with only three clicks. This API automatically performs the following tasks:' % ttower_dowload_page)
+    st.write('The Tower2csv is aimed at accessing global wind energy measurement data from the [Tall Tower Dataset](%s) with ease. Its user-friendly interface (built with Streamlit) enables downloading data from a meteorological tower in CSV format with only three clicks. This API automatically performs the following tasks:' % ttower_dowload_page)
 
     st.write('''
              - Request a dataset to the Tall Tower
