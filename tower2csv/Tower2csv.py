@@ -17,6 +17,7 @@ import glob
 import streamlit as st
 import xarray as xr 
 import pandas as pd
+import numpy as np
 from tower2csv.data_API import data_API
 
 # ----------------------------------------------------------------------- #
@@ -63,7 +64,6 @@ class Tower2csv:
 # ----------------------------------------------------------------------- #
     def find_paths(self):
       self.folder_names = glob.glob(f"{self.unzip_dir}/*/*/*/")
-      self.tower_name = glob.glob(f"{self.unzip_dir}/*")[0].split("/")[-1]
 # ----------------------------------------------------------------------- #
     def read_nc(self): 
       '''This method scans the netCDF files in each sensor folder and join them
@@ -79,14 +79,16 @@ class Tower2csv:
         message = f'Processing {sensor_name} (folder {count}/{N_folders})'
         st.write(message)
         print(message)
-        files_list = glob.glob(f"{current_folder}//*.nc")
+        files_list = glob.glob(f"{current_folder}/*.nc")
         nc = xr.concat([xr.open_dataset(i) 
                         for i in files_list], dim = "time")
         df_folder = self.nc2df(sensor_name, nc)
-        if all(df_folder.isna()):
+        if df_folder.isna().all() is True:
           print('All data in this folder are NaN')  
           continue
         else:
+          df_folder = df_folder.reset_index()
+          df_folder = df_folder.drop_duplicates(subset='time').set_index('time')
           df_all_files = pd.concat([df_folder, df_all_files], axis = 1)
 
       # Storing results in  the object  
@@ -100,7 +102,8 @@ class Tower2csv:
       #df = df.reset_index(level = ('longitude', 'latitude'))
       df = df[[sensor_name]]         # quality-assured column
       df.index = df.index.round("s") # Rounding milisecond to second
-      df[( df <= -9999)] = pd.NA     # NaN to values equals to -99999
+      df[( df <= -9999)] = np.nan     # NaN to values equals to -99999
+      #df = df.replace([-9999,'NaN','nan']) = np.nan
       return df
 # ----------------------------------------------------------------------- #
     def remove_unzip_folder(self):

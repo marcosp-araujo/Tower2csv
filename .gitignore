@@ -8,7 +8,7 @@ __blobstorage__
 
 *.ipynb
 Dockerfile
-test_codes.py
+test.py
 __azurite_db_queue_extent__.json
 __azurite_db_queue__.json
 *.zip
