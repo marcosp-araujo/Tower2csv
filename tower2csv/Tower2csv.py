@@ -62,7 +62,8 @@ class Tower2csv:
         zip_file.extractall(f"{self.unzip_dir}")
 # ----------------------------------------------------------------------- #
     def find_paths(self):
-      self.folder_names = glob.glob(f"{self.unzip_dir}\\{self.tower_name}\\*\\*")
+      path_pattern = os.path.join(self.unzip_dir, self.tower_name, "*", "*")
+      self.folder_names = glob.glob(path_pattern)
 # ----------------------------------------------------------------------- #
     def read_nc(self): 
       '''This method scans the netCDF files in each sensor folder and join them
@@ -81,8 +82,8 @@ class Tower2csv:
 
         streamlit_log_messages(log_messages)
         print(message)
-        
-        files_list = glob.glob(f"{current_folder}\\*.nc")
+        file_paths_patern = os.path.join(current_folder,"*.nc")
+        files_list = glob.glob(file_paths_patern)
         # xr.concat is faster than "xr.open_mfdataset"
         nc = xr.concat([xr.open_dataset(i) 
                         for i in files_list], dim = "time")
