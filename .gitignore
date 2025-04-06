@@ -4,6 +4,7 @@ venv/
 auxiliar/
 Data_tmp/
 Data/*/
+Data/*
 __blobstorage__
 
 *.ipynb

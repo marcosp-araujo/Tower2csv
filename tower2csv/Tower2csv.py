@@ -15,33 +15,33 @@ import zipfile
 import os
 import glob
 import streamlit as st
+
 import xarray as xr 
 import pandas as pd
 import numpy as np
 from tower2csv.data_API import data_API
+from app_modules.streamlit_log_messages import streamlit_log_messages
 
 # ----------------------------------------------------------------------- #
 class Tower2csv:
-    tower_name: str      # Site name
-    unzip_dir: str       # Directory to extract the netCDF files
-    save_file_path: str  # Path of the .csv file to be saved
-
-    run: classmethod        # Starts the processing chain
-    unzip: classmethod      # Extract netCDF files
-    find_paths: classmethod # Gather netCDF files paths
-    read_nc: classmethod    # read netCDF files
-    save_csv: classmethod   # Save output as a .csv file
-    
-    df_all_files: pd.DataFrame # Data from all netCDF files
+    tower_name: str             # Site name
+    unzip_dir: str              # Directory to extract the netCDF files
+    save_file_path: str = None  # Path of the .csv file to be saved
+    run: classmethod            # Starts the processing chain
+    unzip: classmethod          # Extract netCDF files
+    find_paths: classmethod     # Gather netCDF files paths
+    read_nc: classmethod        # read netCDF files
+    save_csv: classmethod       # Save output as a .csv file
+    df_all_files: pd.DataFrame  # Data from all netCDF files
 # ----------------------------------------------------------------------- # 
     def __init__(self, 
-                 tower_name = None, 
-                 unzip_dir = None, 
+                 tower_name, 
+                 unzip_dir, 
                  save_file_path = None,
                  remove_unzip_files = False): 
       ''' Constructor '''
       self.tower_name = tower_name 
-      self.unzip_dir = f"{unzip_dir}//{tower_name}"
+      self.unzip_dir = unzip_dir
       self.save_file_path = save_file_path
       self.remove_unzip_files = remove_unzip_files
       self.run()
@@ -57,13 +57,12 @@ class Tower2csv:
     def unzip(self):
       ''' Extract files from .zip '''
       self.zip_path = data_API(self.tower_name)
-      if os.path.isdir(self.unzip_dir) is False:
-        os.mkdir(self.unzip_dir)
+      os.makedirs(self.unzip_dir,  exist_ok=True)
       with zipfile.ZipFile(self.zip_path, 'r') as zip_file:
         zip_file.extractall(f"{self.unzip_dir}")
 # ----------------------------------------------------------------------- #
     def find_paths(self):
-      self.folder_names = glob.glob(f"{self.unzip_dir}/*/*/*/")
+      self.folder_names = glob.glob(f"{self.unzip_dir}\\{self.tower_name}\\*\\*")
 # ----------------------------------------------------------------------- #
     def read_nc(self): 
       '''This method scans the netCDF files in each sensor folder and join them
@@ -72,19 +71,24 @@ class Tower2csv:
       # Loop over sensors' folders
       df_all_files = pd.DataFrame() # To store all files
       N_folders = len(self.folder_names)
+      log_messages = []
       for count, current_folder in enumerate(self.folder_names):
-        current_folder = current_folder.replace('\\','/').replace('//','/')
-        sensor_name = current_folder.split("/")[-2]
+        current_folder = os.path.normpath(current_folder)
+        sensor_name = os.path.basename(current_folder)
         count += 1
         message = f'Processing {sensor_name} (folder {count}/{N_folders})'
-        st.write(message)
+        log_messages.append(message)
+
+        streamlit_log_messages(log_messages)
         print(message)
-        files_list = glob.glob(f"{current_folder}/*.nc")
+        
+        files_list = glob.glob(f"{current_folder}\\*.nc")
+        # xr.concat is faster than "xr.open_mfdataset"
         nc = xr.concat([xr.open_dataset(i) 
                         for i in files_list], dim = "time")
         df_folder = self.nc2df(sensor_name, nc)
         if df_folder.isna().all() is True:
-          print('All data in this folder are NaN') 
+          print('  All data in this folder are NaN') 
           continue
         else:
           df_folder = df_folder.reset_index()
@@ -102,8 +106,7 @@ class Tower2csv:
       #df = df.reset_index(level = ('longitude', 'latitude'))
       df = df[[sensor_name]]         # quality-assured column
       df.index = df.index.round("s") # Rounding milisecond to second
-      df[( df <= -9999)] = np.nan     # NaN to values equals to -99999
-      #df = df.replace([-9999,'NaN','nan']) = np.nan
+      df = df.replace([-9999,'NaN','nan'], np.nan)
       return df
 # ----------------------------------------------------------------------- #
     def remove_unzip_folder(self):
@@ -116,6 +119,7 @@ class Tower2csv:
     def save_csv(self): 
       ''' This method saves the dataframe in .CSV format '''
       if self.save_file_path is not None:
+        self.save_file_path = os.path.normpath(self.save_file_path)
         cvs_file_name = f"{self.save_file_path}.csv"
         print(f'Saving data at: {cvs_file_name} \nPLEASE WAIT.')
         self.df_all_files.to_csv(cvs_file_name, sep = ',', decimal = '.') 
