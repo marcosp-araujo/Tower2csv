@@ -1,0 +1,584 @@
+Tower name,Access to data,Top sensor (m),Time resolution (min),First year,Last year,Country,Continent,Latitude,Longitude,Offshore
+Abadan,b2share,40,10,2007,2009,IR,As,30.45,48.31,no
+Abadeh,b2share,40,10,2006,2007,IR,As,31.09,52.25,no
+Abarkooh,b2share,40,10,2006,2008,IR,As,31.3,53.66,no
+Abhar,b2share,40,10,2007,2009,IR,As,36.11,49.39,no
+Afriz,b2share,40,10,2006,2008,IR,As,33.45,58.96,no
+Agh Ghala,b2share,40,10,2006,2007,IR,As,37.11,54.47,no
+Ahar,b2share,40,10,2008,2015,IR,As,38.59,47.22,no
+Ainswort,-,-,-,-,-,US,NAm,42.46,-99.87,no
+Alaiz,-,-,-,-,-,ES,Eu,42.69,-1.57,no
+Alert,-,-,-,2004,-,CA,NAm,82.45,-62.51,no
+American Samoa,-,-,-,1994,2021,AS,Oc,-14.25,-170.56,no
+Ardakan,b2share,40,10,2006,2008,IR,As,32.59,54.27,no
+Argyle Maine,-,-,-,2003,-,US,NAm,45.03,-68.68,no
+Asbach,-,-,-,-,-,DE,Eu,49.34,9.05,no
+Asfestan,b2share,40,10,2005,2006,IR,As,37.93,47.60,no
+Atto,-,-,-,2018,2022,BR,SAm,-2.15,-59.01,no
+BAO,-,-,-,2007,2016,US,NAm,40.05,-105.00,no
+Bardkhoon,b2share,40,10,2006,2008,IR,As,27.98,51.49,no
+Bare Reactor Experiment Nevada,-,-,-,-,-,US,NAm,36.78,-116.24,no
+Barrow,-,-,-,1988,2022,US,NAm,71.32,-156.61,no
+Barzook,b2share,100,10,2015,2016,IR,As,33.81,51.14,no
+BCI,b2share,48,15,2001,2022,PA,NAm,9.17,-79.85,no
+Behabad,b2share,40,10,2006,2008,IR,As,31.78,56.12,no
+Belmont,-,-,-,-,-,FR,Eu,47.71,5.55,no
+Bialystok,-,-,-,2003,-,PL,Eu,53.23,23.03,no
+Binalood,b2share,30,10,2002,2003,IR,As,35.99,59.39,no
+Bojnoord,b2share,40,10,2006,2008,IR,As,38.14,57.25,no
+Bonab,b2share,40,10,2006,2007,IR,As,37.4,46.03,no
+Boroojen,b2share,40,10,2006,2007,IR,As,31.97,51.31,no
+Boseong,b2share,300,10,2014,2016,KR,As,34.76,127.21,no
+Braschaat,b2share,41,30,1995,2014,BE,Eu,51.31,4.52,no
+Brookhaven,b2share,85,10,1994,2022,US,NAm,33.87,-84.34,no
+Bruck,-,-,-,-,-,DE,Eu,52.2,12.77,no
+BURL1,b2share,38,60,1984,2021,US,NAm,28.91,-89.43,no
+Butler Grade,b2share,62,10,2002,2018,US,NAm,45.95,-118.68,no
+bygl1,b2share,31,10,2005,2021,US,NAm,29.79,-90.42,yes
+Cabauw,-,-,-,1986,2021,NL,Eu,51.97,4.93,no
+Calwind,-,-,-,-,-,US,NAm,35.05,-118.38,no
+Cape Point,b2share,30,60,2007,2013,ZA,Af,-34.35,18.48,no
+Cardington,-,-,-,2004,2017,GB,Eu,52.1,-0.42,no
+Chabahar,b2share,40,10,2008,2009,IR,As,25.33,60.66,no
+Chaldoran,b2share,40,10,2006,2007,IR,As,39.05,44.45,no
+Changbaishan,-,-,-,2002,2005,CN,As,41.7,127.72,no
+Cherskii,-,-,-,-,-,RU,As,68.51,161.53,no
+Chinook,b2share,50,10,2006,2016,US,NAm,45.83,-119.53,no
+CHLV2,b2share,43,60,1984,2016,US,NAm,36.91,-75.71,no
+CIBA,-,-,-,2009,-,ES,Eu,41.81,-4.93,no
+CVO,b2share,30,10,2011,2021,CV,Af,16.85,-24.87,no
+Davarzan,b2share,40,10,2006,2008,IR,As,36.27,56.81,no
+Dehake Saravan,b2share,40,10,2006,2007,IR,As,27.14,62.67,no
+Deilaman,b2share,40,10,2010,2010,IR,As,36.88,49.91,no
+Delabole,-,-,-,-,-,GB,Eu,50.63,-4.71,no
+Delgan,b2share,40,10,2006,2007,IR,As,27.49,59.46,no
+Delvar,b2share,40,10,2006,2008,IR,As,28.84,51.05,no
+DESW1,b2share,39,60,1984,2021,US,NAm,47.67,-124.48,no
+Docking Shoal,-,-,-,2006,2009,GB,Eu,53.16,0.65,yes
+Dukovany,-,-,-,-,-,CZ,Eu,49.08,16.15,no
+Eghlid,b2share,40,10,2006,2008,IR,As,30.89,52.62,no
+El Arenosillo,-,-,-,2008,-,ES,Eu,37.1,-6.74,no
+Enjilavand,b2share,40,10,2011,2012,IR,As,34.94,50.67,no
+Esfaryen,b2share,40,10,2006,2008,IR,As,37.05,57.40,no
+Eshtahard,b2share,40,10,2008,2009,IR,As,35.73,50.69,no
+EWTW1,-,-,-,2003,-,NL,Eu,52.81,5.08,no
+EWTW2,-,-,-,2004,-,NL,Eu,52.81,5.09,no
+EWTW3,-,-,-,2005,-,NL,Eu,52.83,5.08,no
+Fadashk,b2share,40,10,2006,2008,IR,As,32.78,58.79,no
+Falideh,b2share,40,10,2002,2004,IR,As,36.81,49.40,no
+Fino1,-,-,-,2004,2022,DE,Eu,54.01,6.59,yes
+Fino2,-,-,-,2007,2022,DE,Eu,55.01,13.15,yes
+Fino3,-,-,-,2009,2022,DE,Eu,55.2,7.16,yes
+fmoa1,b2share,36,10,2008,2021,US,NAm,30.23,-88.02,yes
+fsnm2,b2share,42,10,2016,2021,US,NAm,39.22,-76.53,yes
+Fuji Hokuroku,-,-,-,2005,2012,JP,As,35.44,138.76,no
+Fujiyoshida,-,-,-,-,-,JP,As,35.45,138.76,no
+FWYF1,b2share,44,60,1991,2021,US,NAm,25.59,-80.10,no
+Ganje,b2share,40,10,2002,2003,IR,As,36.86,49.46,no
+Gardaneh Almas,b2share,40,10,2009,2010,IR,As,37.59,48.67,no
+Gartow,b2share,341,60,2016,2022,DE,Eu,53.07,11.44,no
+Ghadamgah,b2share,40,10,2006,2008,IR,As,36.06,59.01,no
+Ghoroghchi,b2share,100,10,2013,2014,IR,As,33.59,51.00,no
+Ghorveh,b2share,40,10,2008,2009,IR,As,35.18,47.75,no
+Gobabeb,-,-,-,-,-,NA,Af,-23.55,15.03,no
+Goodnoe Hills,b2share,59,10,2002,2018,US,NAm,45.78,-120.55,no
+Greater Gabbard MMX,-,-,-,2012,2015,GB,Eu,51.86,1.90,yes
+Greater Gabbard MMZ,-,-,-,2005,2014,GB,Eu,51.94,1.92,yes
+Gunfleet Sands,-,-,-,2002,2007,GB,Eu,51.73,1.20,yes
+Gwangneung Deciduous Forest,-,-,-,2003,2008,KR,As,37.75,127.15,no
+Gwynt Y Mor,-,-,-,2005,2014,GB,Eu,53.48,-3.51,yes
+Hadadeh,b2share,40,10,2006,2008,IR,As,36.25,54.73,no
+Haft Chah,b2share,40,10,2010,2011,IR,As,27.72,52.43,no
+Halvan,b2share,40,10,2006,2008,IR,As,33.96,56.30,no
+Hamburg University,-,-,-,2004,2022,DE,Eu,53.52,10.10,no
+Hegyhatsal,b2share,115,60,1994,2020,HU,Eu,46.96,16.65,no
+Hendijan,b2share,40,10,2010,2011,IR,As,30.12,49.77,no
+Hesarak,b2share,40,10,2011,2012,IR,As,35.8,51.32,no
+Hidalgo,-,-,-,-,-,MX,NAm,20.01,-98.55,no
+Hoevsoere,-,-,-,2005,2013,DK,Eu,56.44,8.15,no
+Hohenpeissenberg,b2share,131,60,2015,2022,DE,Eu,47.8,11.02,no
+Hormozgan University,b2share,40,10,2014,2016,IR,As,27.26,56.44,no
+Hoseinieh,b2share,40,10,2007,2009,IR,As,30.8,48.18,no
+Huisun,-,-,-,2010,2013,TW,As,24.08,121.13,no
+Humber Gateway,-,-,-,2009,2012,GB,Eu,53.64,0.27,yes
+Hyltemossa,b2share,150,60,2017,2022,SE,Eu,56.1,13.42,no
+Hyytiala,b2share,125,10,1995,2022,FI,Eu,61.85,24.29,no
+IAP,-,-,-,-,-,CN,As,39.97,116.37,no
+Ijmuiden,-,-,-,2011,2016,NL,Eu,52.85,3.44,yes
+Imk Tro,-,-,-,1972,-,DE,Eu,49.09,8.43,no
+Inner Dowsing,-,-,-,1999,2008,GB,Eu,53.13,0.44,yes
+Irbene,-,-,-,2007,2016,LV,Eu,57.56,21.86,no
+Ispra,b2share,100,60,2017,2022,IT,Eu,45.81,8.64,no
+Jangal,b2share,40,10,2006,2008,IR,As,34.7,59.21,no
+Jask,b2share,40,10,2006,2007,IR,As,25.69,58.11,no
+Jaslovske Bohunice,-,-,-,-,-,SK,Eu,48.49,17.66,no
+Javim,b2share,40,10,2006,2007,IR,As,28.19,54.09,no
+Jirandeh,b2share,40,10,2003,2004,IR,As,36.71,49.78,no
+Juelich,-,-,-,2011,2017,DE,Eu,50.93,6.22,no
+Kaboodar Ahang,b2share,40,10,2006,2007,IR,As,35.35,48.75,no
+Kahak Garmsar,b2share,40,10,2006,2008,IR,As,35.12,52.32,no
+Kahrizak,b2share,40,10,2007,2009,IR,As,35.47,51.32,no
+Karlsruhe,b2share,200,60,2019,2022,DE,Eu,49.09,8.42,no
+Kennewick,b2share,37,10,2002,2018,US,NAm,46.1,-119.12,no
+Kentish Flats,-,-,-,2002,2005,GB,Eu,51.46,1.09,yes
+Kerend Gharb,b2share,80,10,2012,2014,IR,As,34.43,46.19,no
+KFU,-,-,-,-,-,DE,Eu,49.98,10.19,no
+Khaf,b2share,40,10,2007,2009,IR,As,34.49,60.31,no
+Khalkhal Bafrajerd,b2share,40,10,2011,2014,IR,As,37.54,48.57,no
+Khalkhal Eilkhichi,b2share,40,10,2009,2011,IR,As,37.63,48.25,no
+Khash,b2share,40,10,2006,2007,IR,As,28.1,61.06,no
+Khomein,b2share,40,10,2006,2007,IR,As,33.8,50.16,no
+Kohein,b2share,80,10,2011,2015,IR,As,36.34,49.71,no
+Korit,b2share,40,10,2006,2008,IR,As,33.44,56.95,no
+Kosetice,-,-,-,2006,-,CZ,Eu,49.57,15.08,no
+Kresin u pacova,-,-,-,-,-,CZ,Eu,49.58,15.08,no
+La Muela,-,-,-,-,-,ES,Eu,41.59,-1.12,no
+La Reunion - Maido,-,-,-,2013,2018,RE,Af,-20.9,55.48,no
+Langrood,b2share,40,10,2006,2008,IR,As,37.26,50.23,no
+Larijan,b2share,40,10,2010,2011,IR,As,35.98,52.22,no
+Latman,b2share,40,10,2007,2008,IR,As,35.77,51.23,no
+Likak,b2share,40,10,2010,2011,IR,As,30.86,50.12,no
+Lindenberg,b2share,98,10,1999,2017,DE,Eu,52.17,14.12,no
+London Array,-,-,-,2004,2010,GB,Eu,51.59,1.39,yes
+Lootak Zabol,b2share,40,10,2006,2010,IR,As,30.73,61.39,no
+lopl1,b2share,58,15,2011,2021,US,NAm,28.89,-90.03,yes
+Lutjewad,b2share,60,10,2000,2022,NL,Eu,53.4,6.35,no
+Lyse,-,-,-,1993,1995,SE,Eu,58.32,11.39,no
+M1 La Rumorosa,b2share,80,10,2018,2020,MX,NAm,32.48,-116.11,no
+M2 Merida,b2share,80,10,2017,2020,MX,NAm,21.14,-89.79,no
+M3 Ciudad Cuauhtemoc,b2share,80,10,2017,2020,MX,NAm,29.02,-106.95,no
+M4 CERTE,b2share,80,10,2017,2020,MX,NAm,16.55,-94.96,no
+M5 Ojuelos,b2share,80,10,2018,2020,MX,NAm,21.66,-101.72,no
+M6 San Fernando,b2share,80,10,2017,2020,MX,NAm,25.02,-98.09,no
+M7 Tepexi,b2share,80,10,2017,2020,MX,NAm,18.59,-97.94,no
+Mae Klong,-,-,-,2002,2004,TH,As,14.58,98.84,no
+Mahidasht,b2share,40,10,2006,2007,IR,As,34.39,46.73,no
+Mahshahr,b2share,40,10,2007,2009,IR,As,30.58,49.09,no
+Malin Head,b2share,22,10,1988,2022,IE,Eu,55.35,-7.33,no
+Manjil,b2share,40,10,2004,2004,IR,As,36.74,49.40,no
+Marvdasht,b2share,40,10,2006,2007,IR,As,29.98,52.92,no
+Matisi,-,-,-,2009,-,LV,Eu,57.69,25.17,no
+Mauna Loa,-,-,-,1991,2021,US,NAm,19.54,-155.58,no
+Mayan,b2share,40,10,2006,2008,IR,As,38.09,46.05,no
+Megler,b2share,53,10,2002,2018,US,NAm,46.27,-123.88,no
+Meshkin Shahr,b2share,40,10,2008,2010,IR,As,38.27,47.73,no
+Methil,-,-,-,2013,2015,GB,Eu,56.16,-3.01,yes
+mhrn6,b2share,46,10,2015,2021,US,NAm,40.64,-74.16,yes
+Mil Nader,b2share,40,10,2010,2012,IR,As,31.09,61.16,no
+Mir Javeh,b2share,40,10,2009,2010,IR,As,29.03,61.44,no
+Mir Khand,b2share,40,10,2002,2003,IR,As,36.67,49.40,no
+Moalleman,b2share,40,10,2006,2008,IR,As,34.87,54.57,no
+Moghar,b2share,40,10,2006,2007,IR,As,33.57,52.18,no
+Moody,-,-,-,2001,-,US,NAm,31.31,-97.33,no
+Nahavand,b2share,40,10,2006,2007,IR,As,34.27,48.21,no
+Namin,b2share,40,10,2006,2007,IR,As,38.38,48.38,no
+Namors,-,-,-,-,-,CN,As,30.77,90.98,no
+Nanortalik,b2share,49,10,2007,2009,DK,Eu,60.14,-45.23,no
+Naselle Ridge,b2share,30,10,2010,2018,US,NAm,46.42,-123.80,no
+Nasudden,-,-,-,1980,1997,DK,Eu,57.07,18.22,no
+NAVO-toren,-,-,-,-,-,BE,Eu,51.01,2.58,no
+NDAO,-,-,-,2012,-,NA,Af,-23.55,15.03,no
+Nikooye,b2share,40,10,2009,2012,IR,As,36.31,49.53,no
+Nir,b2share,80,10,2013,2014,IR,As,38.03,47.98,no
+NOAH,-,-,-,2012,2014,GB,Eu,55.14,-1.49,yes
+Norunda,b2share,100,60,2017,2022,SE,Eu,60.08,17.46,no
+Nosrat Abad,b2share,40,10,2006,2007,IR,As,29.81,60.16,no
+NWTC M2,b2share,80,10,1996,2022,US,NAm,39.91,-105.23,no
+NWTC M4,b2share,134,10,2012,2016,US,NAm,39.91,-105.23,no
+NWTC M5,b2share,130,10,2012,2022,US,NAm,39.91,-105.23,no
+Oak Ridge,b2share,100,60,1998,2014,US,NAm,36.01,-84.27,no
+Obninsk,b2share,301,60,2007,2021,RU,Eu,55.11,36.60,no
+Ochsenkopf,b2share,163,60,2019,2022,DE,Eu,50.03,11.81,no
+Oestergarnsholm,b2share,29,10,2003,2014,SE,Eu,57.43,18.98,no
+Oesterild,-,-,-,2015,-,DK,Eu,55.69,12.09,no
+Old Aspen,-,-,-,2002,2009,CA,NAm,53.63,-106.20,no
+Olinda,-,-,-,1995,-,BR,SAm,-8.1,-34.51,yes
+OPE,b2share,120,60,2016,2022,FR,Eu,48.56,5.50,no
+Ope Andra,-,-,-,-,-,FR,Eu,48.55,5.50,no
+OS2,-,-,-,-,-,FR,Eu,48.38,1.37,no
+Oskar Von Miller,-,-,-,-,-,DE,Eu,48.15,11.57,no
+OSU,b2share,46,30,2007,2021,US,NAm,45.56,-84.71,no
+Owez,b2share,116,10,2005,2010,NL,Eu,52.61,4.39,yes
+Palangkaraya,-,-,-,2001,2005,ID,As,2.35,114.04,no
+Papooli,b2share,40,10,2009,2010,IR,As,36.08,50.06,no
+Park Falls,b2share,396,60,1995,2022,US,NAm,45.95,-90.27,no
+Pasoh,-,-,-,2002,2009,MY,As,2.97,102.30,no
+Peninsula talltower,-,-,-,2016,-,TR,As,38.31,26.65,no
+Perdigao,-,-,-,1995,-,PT,Eu,39.7,-7.73,no
+prim4,b2share,34,60,2010,2015,US,NAm,45.36,-83.49,no
+Puijo,b2share,75,10,2005,2015,FI,Eu,62.91,27.65,no
+Qianyanzhou,-,-,-,2002,2004,CN,As,26.73,115.07,no
+Qoms,-,-,-,-,-,CN,As,28.21,86.56,no
+Race Bank,-,-,-,2006,2013,GB,Eu,53.31,0.75,yes
+Rafsanjan,b2share,40,10,2006,2008,IR,As,30.32,56.22,no
+Rampion,-,-,-,2012,2013,GB,Eu,50.69,-0.34,yes
+Ridge Hill,-,-,-,2012,-,GB,Eu,52,-2.54,no
+Risoe,-,-,-,1995,-,DK,Eu,55.69,12.10,no
+ROAM4,b2share,47,60,1983,2021,US,NAm,47.87,-89.31,no
+Rödeser Berg,-,-,-,-,-,DE,Eu,51.36,9.20,no
+Roodab,b2share,40,10,2008,2010,IR,As,36.05,57.35,no
+Rostam Abad,b2share,40,10,2002,2003,IR,As,36.9,49.49,no
+Saclay,b2share,100,60,2017,2022,FR,Eu,48.72,2.14,no
+Sakaerat,-,-,-,2000,2003,TH,As,14.49,101.92,no
+Sakai,-,-,-,2009,2009,JP,As,34.57,135.49,no
+Sanar,b2share,40,10,2006,2007,IR,As,36.5,51.31,no
+Santarem,b2share,64,30,2000,2004,BR,SAm,-3.02,-54.97,no
+Sarakhs,b2share,40,10,2006,2007,IR,As,36.31,61.14,no
+Saravan,b2share,40,10,2010,2011,IR,As,27.42,62.26,no
+Saveh Site,b2share,40,10,2008,2009,IR,As,35.08,50.40,no
+Semnan,b2share,40,10,2009,2010,IR,As,35.62,53.45,no
+Seto Mixed Forest,-,-,-,2002,2015,JP,As,35.25,137.07,no
+SETORS,-,-,-,-,-,CN,As,29.77,94.73,no
+Seven Mile,b2share,30,10,2002,2018,US,NAm,45.63,-121.27,no
+SGOF1,b2share,35,60,2003,2021,US,NAm,29.41,-84.86,no
+Shahr Abad,b2share,40,10,2011,2011,IR,As,37.65,56.20,no
+Shahr Babak,b2share,40,10,2006,2008,IR,As,30.09,55.22,no
+Shandol,b2share,40,10,2010,2012,IR,As,31.15,61.66,no
+Shell Flats Mast 1,-,-,-,2011,2013,GB,Eu,53.86,-3.29,yes
+Shell Flats Mast 2,-,-,-,2011,2014,GB,Eu,53.87,-3.20,yes
+Shetland,-,-,-,2005,-,SE,Eu,60.25,-1.32,no
+Sheykh Tapeh,b2share,40,10,2012,2015,IR,As,37.52,45.08,no
+Shiraz Site,b2share,40,10,2007,2009,IR,As,29.37,52.61,no
+Shooshtar,b2share,40,10,2007,2009,IR,As,31.79,48.76,no
+Shorjeh,b2share,40,10,2008,2010,IR,As,36.07,49.44,no
+Ski,-,-,-,1982,1995,NO,Eu,63.67,8.34,no
+skmg1,b2share,50,60,2004,2009,US,NAm,31.53,-80.24,yes
+Sodankyla,b2share,24,30,2000,2022,FI,Eu,67.36,26.64,no
+Sodra Midsjobanken,-,-,-,2012,-,SE,Eu,55.72,17.33,yes
+Sotavento,-,-,-,-,-,ES,Eu,43.35,-7.88,no
+South Carolina,b2share,329,15,2009,2017,US,NAm,33.41,-81.83,no
+South Pole,-,-,-,2007,2021,US,NAm,-89.98,-24.80,no
+spag1,b2share,50,60,2004,2009,US,NAm,31.38,-80.57,yes
+STDM4,b2share,35,60,1984,2021,US,NAm,47.18,-87.22,no
+Steinkimmen,b2share,252,60,2019,2022,DE,Eu,53.04,8.46,no
+Stora Middelgrund,-,-,-,2008,2015,SE,Eu,56.56,12.10,yes
+Summit,-,-,-,2008,2022,GL,Eu,72.58,-38.48,no
+Svartberget,b2share,150,60,2017,2022,SE,Eu,64.25,19.77,no
+Tafresh,b2share,40,10,2010,2013,IR,As,34.68,50.06,no
+Taggen,-,-,-,2014,-,SE,Eu,55.87,14.52,yes
+Taleghan Site,b2share,40,10,2007,2010,IR,As,36.12,50.57,no
+Tange Hashi,b2share,80,10,2015,2015,IR,As,29.18,52.96,no
+Tarom,b2share,40,10,2011,2013,IR,As,36.66,49.03,no
+Tiksi,-,-,-,2010,2018,RU,As,71.6,128.89,no
+Tjare,-,-,-,1988,1993,DK,Eu,55.45,8.59,no
+Tomakomai,-,-,-,2001,2003,JP,As,42.74,141.52,no
+Too Takaboon,b2share,30,10,2002,2003,IR,As,36.91,49.52,no
+Torfhaus,b2share,147,60,2018,2022,DE,Eu,51.81,10.54,no
+Trainou,b2share,180,60,2016,2022,FR,Eu,47.96,2.11,no
+Trinidad Head,-,-,-,2002,2017,US,NAm,41.05,-124.15,no
+Troutdale,b2share,30,10,2010,2018,US,NAm,45.56,-122.40,no
+TTU,-,-,-,-,-,US,NAm,33.58,-101.88,no
+Tughill,-,-,-,-,-,US,NAm,43.93,-75.67,no
+Tumbarumba,b2share,70,60,2001,2022,AU,Oc,-35.66,148.15,no
+tybg1,b2share,34,60,2004,2008,US,NAm,31.63,-79.92,yes
+upbc1,b2share,100,10,2013,2021,US,NAm,38.04,-122.12,yes
+Uto,b2share,58,60,2018,2022,FI,Eu,59.78,21.37,no
+Varzaneh,b2share,40,10,2006,2008,IR,As,32.46,52.62,no
+Vasf,b2share,40,10,2008,2009,IR,As,34.19,50.93,no
+Ventosa,-,-,-,2002,-,MX,NAm,16.58,-94.83,no
+Vielsalm,b2share,52,30,1996,2017,BE,Eu,50.31,6.00,no
+Vindeby2,-,-,-,-,-,DK,Eu,54.95,11.13,yes
+Wallaby Creek,b2share,110,30,2005,2013,AU,Oc,-37.43,145.19,no
+Walnut Grove,b2share,488,60,2005,2016,US,NAm,38.26,-121.49,no
+Wasco,b2share,30,10,2005,2018,US,NAm,45.5,-120.77,no
+wdel1,b2share,41,60,2008,2021,US,NAm,28.66,-89.55,yes
+West Branch,b2share,379,20,2008,2008,US,NAm,41.72,-91.35,no
+Wise,-,-,-,2005,2007,US,NAm,33.6,-102.01,no
+WITN,-,-,-,1997,1999,US,NAm,35.37,-77.39,no
+WM01,b2share,62,10,2010,2022,ZA,Af,-28.6,16.66,no
+WM02,b2share,62,10,2010,2022,ZA,Af,-31.52,19.36,no
+WM03,b2share,62,10,2010,2022,ZA,Af,-31.73,18.42,no
+WM04,b2share,62,10,2010,2013,ZA,Af,-32.85,18.11,no
+WM05,b2share,62,10,2010,2022,ZA,Af,-34.61,19.69,no
+WM06,b2share,62,10,2010,2022,ZA,Af,-32.56,20.69,no
+WM07,b2share,62,10,2010,2022,ZA,Af,-32.97,22.56,no
+WM08,b2share,62,10,2010,2022,ZA,Af,-34.11,24.51,no
+WM09,b2share,62,10,2010,2022,ZA,Af,-31.25,25.03,no
+WM10,b2share,62,10,2010,2022,ZA,Af,-32.09,28.14,no
+WM11,b2share,62,10,2015,2021,ZA,Af,-30.81,28.07,no
+WM12,b2share,62,10,2015,2022,ZA,Af,-29.85,30.53,no
+WM13,b2share,62,10,2015,2021,ZA,Af,-27.43,32.17,no
+WM14,b2share,62,10,2015,2022,ZA,Af,-27.88,29.54,no
+WM15,b2share,62,10,2015,2022,ZA,Af,-28.62,27.12,no
+wslm4,b2share,43,30,2015,2021,US,NAm,45.84,-85.14,yes
+Xishuangbanna,-,-,-,2002,2005,CN,As,21.95,101.20,no
+Zahedan,b2share,40,10,2011,2012,IR,As,29.47,60.81,no
+Zarrineh2,b2share,80,10,2015,2016,IR,As,36.06,46.93,no
+Zartoshtabad,b2share,80,10,2014,2015,IR,As,37.61,48.50,no
+Zotto,-,-,-,2007,-,RU,As,60.8,89.35,no
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,
+Your search did not return any results ...,,,,,,,,,,

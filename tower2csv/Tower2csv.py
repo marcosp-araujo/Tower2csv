@@ -40,7 +40,7 @@ class Tower2csv:
                  save_file_path = None,
                  remove_unzip_files = False): 
       ''' Constructor '''
-      self.tower_name = tower_name 
+      self.tower_name = tower_name.lower().replace(' ','_')
       self.unzip_dir = unzip_dir
       self.save_file_path = save_file_path
       self.remove_unzip_files = remove_unzip_files
