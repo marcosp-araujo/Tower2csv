@@ -1,6 +1,6 @@
 
 """
-@author: Marcos P. Araujo da Silva
+@author: Marcos P. Araujo
 https://github.com/marcosp-araujo/Tower2csv/
 
 This code converts netCDF files from the Tall Tower database into a .CSV file

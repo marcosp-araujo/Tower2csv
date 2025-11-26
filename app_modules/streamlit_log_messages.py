@@ -7,7 +7,7 @@ def streamlit_log_messages(log_messages):
         box(log_messages)
 
 def is_running_in_streamlit():
-    # Detecting if the script is ran in streamlit
+    '''Detecting if the script is ran in streamlit'''
     if "main_app" in sys.argv[0]:
         return True
     else:
@@ -19,13 +19,13 @@ def box(log_messages):
     # HTML/JS component with auto-scroll
 
     components.html(f""" 
-        <div style="margin-top: -10px;">
+        <div style="margin-top: -10px; **margin-bottom: -100px;**">
             <div id="log-box" 
-                style="height: 100px; 
-                        overflow-y: auto; 
-                        background-color: #f0f0f0; 
-                        padding: 6px; font-family: monospace; 
-                        border-radius: 5px;">
+                style="height: 80px; 
+                    overflow-y: auto; 
+                    background-color: #f0f0f0; 
+                    padding: 6px; font-family: monospace; 
+                    border-radius: 5px;">
                 {full_log}
             </div>
             <script>
@@ -33,5 +33,5 @@ def box(log_messages):
                 logBox.scrollTop = logBox.scrollHeight;
             </script>
         </div>
-    """, height=120)
+    """, height=85)
 

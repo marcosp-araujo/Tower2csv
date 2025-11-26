@@ -4,19 +4,19 @@ The Tall Tower Dataset is an open database aimed at boosting the use of hub-heig
 
 ### Requirements and virtual environment
 
-Creating a virtual environment is strongly advisable to avoid errors when running the Tower2csv in your local machine. It can be done using the "virtualenv" library. You may use the following command lines in your terminal to install "virtualenv" and set up a new virtual environment:
+Creating a virtual environment is strongly advisable to avoid errors when running the Tower2csv in your local machine. It can be done using the "uv" library. You may use the following command lines in your terminal to install "uv" and set up a new virtual environment:
 
 ```
-pip install virtualenv
+pip install uv
 ```
 For creating a new virtual environment called "venv":
 ```
-python -m venv venv
+uv venv --python 3.12
 ```
 
 Now, for activating the new virtual environment:
 ```
-.\venv\Scripts\activate
+.\venv\Scripts\activate.bat
 ```
 
 Then, for installing the [requirements.txt](requirements.txt):
@@ -28,11 +28,11 @@ pip install -r requirements.txt
 ### How to use
 The web application can be run using the following command.
 ```
-streamlit run .\main_app.py 
+uv run streamlit run .\main_app.py 
 ```
 Moreover, you can also run it in your preferred IDE, using this command:
 ```
-python .\main.py 
+uv run python main.py 
 ```
 
 ### Input parameters
