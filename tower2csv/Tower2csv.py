@@ -33,7 +33,7 @@ class Tower2csv:
     read_nc: classmethod        # read netCDF files
     save_csv: classmethod       # Save output as a .csv file
     df_all_files: pd.DataFrame  # Data from all netCDF files
-# ----------------------------------------------------------------------- # 
+    # -------------------------------------------------------------------- # 
     def __init__(self, 
                  tower_name, 
                  unzip_dir, 
@@ -45,27 +45,29 @@ class Tower2csv:
       self.save_file_path = save_file_path
       self.remove_unzip_files = remove_unzip_files
       self.run()
-# ----------------------------------------------------------------------- # 
-    def run(self):
+    # -------------------------------------------------------------------- #  
+    def run(self) -> None:
+      ''' This method runs all processing steps '''
       if self.tower_name is not None: 
         self.unzip()
         self.find_paths()
         self.read_nc() 
         self.remove_unzip_folder()        
         self.save_csv() 
-# ----------------------------------------------------------------------- # 
-    def unzip(self):
+    # -------------------------------------------------------------------- # 
+    def unzip(self) -> None:
       ''' Extract files from .zip '''
       self.zip_path = data_API(self.tower_name)
       os.makedirs(self.unzip_dir,  exist_ok=True)
       with zipfile.ZipFile(self.zip_path, 'r') as zip_file:
         zip_file.extractall(f"{self.unzip_dir}")
-# ----------------------------------------------------------------------- #
-    def find_paths(self):
+    # -------------------------------------------------------------------- # 
+    def find_paths(self) -> None:
+      ''' This method finds all sensor folders inside the tower folder '''
       path_pattern = os.path.join(self.unzip_dir, self.tower_name, "*", "*")
       self.folder_names = glob.glob(path_pattern)
-# ----------------------------------------------------------------------- #
-    def read_nc(self): 
+    # -------------------------------------------------------------------- #  
+    def read_nc(self) -> None: 
       '''This method scans the netCDF files in each sensor folder and join them
           into a single dataframe that is saved in CSV format.
       '''
@@ -99,8 +101,8 @@ class Tower2csv:
       # Storing results in  the object  
       self.df_all_files = df_all_files   
       self.df_folder = df_folder
-# ----------------------------------------------------------------------- #      
-    def nc2df(_, sensor_name, nc): 
+    # -------------------------------------------------------------------- #        
+    def nc2df(_, sensor_name, nc) -> pd.DataFrame: 
       ''' This method reads and converts a netCDF into a pandas dataframe '''
       df = nc.to_dataframe()         # Converting netcdf into dataframe
       df = df.droplevel(['height','longitude', 'latitude'])  # Height info is the column name
@@ -109,15 +111,16 @@ class Tower2csv:
       df.index = df.index.round("s") # Rounding milisecond to second
       df = df.replace([-9999,'NaN','nan'], np.nan)
       return df
-# ----------------------------------------------------------------------- #
-    def remove_unzip_folder(self):
+    # -------------------------------------------------------------------- # 
+    def remove_unzip_folder(self) -> None:
+      ''' This method removes the unzip folder '''
       if self.remove_unzip_files is True:
         try:
           shutil.rmtree(self.unzip_dir)
         except:
           pass
-# ----------------------------------------------------------------------- #    
-    def save_csv(self): 
+    # -------------------------------------------------------------------- #     
+    def save_csv(self) -> None: 
       ''' This method saves the dataframe in .CSV format '''
       if self.save_file_path is not None:
         self.save_file_path = os.path.normpath(self.save_file_path)
