@@ -15,7 +15,7 @@ Creating a virtual environment is strongly advisable to avoid errors when runnin
 ```
 pip install uv
 ```
-For creating a new virtual environment called "venv":
+For creating a new virtual environment called ".venv":
 ```
 uv venv --python 3.12
 ```
