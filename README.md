@@ -16,21 +16,22 @@ uv venv --python 3.12
 
 Now, for activating the new virtual environment:
 ```
-.\venv\Scripts\activate.bat
+.\venv\Scripts\activate.ps1
 ```
 
 Then, for installing the [requirements.txt](requirements.txt):
 
 ```
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 ````
 
 ### How to use
+There are two options: web app and command line.
 The web application can be run using the following command.
 ```
 uv run streamlit run .\main_app.py 
 ```
-Moreover, you can also run it in your preferred IDE, using this command:
+You can also run it in your preferred IDE, using this command:
 ```
 uv run python main.py 
 ```

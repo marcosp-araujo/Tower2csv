@@ -14,4 +14,3 @@ if __name__ == "__main__":
     unzip_dir = r"./Data" # Directory to extract the netCDF files
     save_file_path = f"./Data/{tower_name}" # Path to save the .csv file
     T = Tower2csv(tower_name, unzip_dir, save_file_path)
-
