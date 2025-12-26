@@ -11,7 +11,7 @@ def description():
     
     st.title('Tower2csv API')
 
-    st.write('By Marcos P. Araújo [(Linkedin)](%s). Updated on Dicember 26, 2025.' %'https://www.linkedin.com/in/marcosp-araujo/')
+    st.write('By Marcos P. Araújo [(Linkedin)](%s). Updated on December 26, 2025.' %'https://www.linkedin.com/in/marcosp-araujo/')
 
     st.markdown("""
     <p style='text-align: justify;'>
