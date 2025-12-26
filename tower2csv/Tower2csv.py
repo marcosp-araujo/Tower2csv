@@ -19,7 +19,7 @@ import streamlit as st
 import xarray as xr 
 import pandas as pd
 import numpy as np
-from tower2csv.data_API import data_API
+from auxiliar.data_API import data_API
 from app_modules.streamlit_log_messages import streamlit_log_messages
 
 # ----------------------------------------------------------------------- #

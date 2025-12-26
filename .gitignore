@@ -1,12 +1,9 @@
 __pycache__/
 __queuestorage__/
-venv/
+__blobstorage__
 .venv
 auxiliar/
-Data_tmp/
-Data/*/
 Data/*
-__blobstorage__
 
 *.ipynb
 Dockerfile
